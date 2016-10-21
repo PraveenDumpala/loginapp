@@ -1,0 +1,13 @@
+{
+  "name": "LoginApp",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "^4.13.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "should": "^11.1.1",
+    "supertest": "^2.0.1"
+  }
+}

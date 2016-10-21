@@ -1,0 +1,38 @@
+<script>
+function preventBack(){window.history.forward();}
+  setTimeout("preventBack()", 0);
+  window.onunload=function(){null};
+</script>
+<style>
+ .error-message{
+   color:red;
+   font-weight:bold
+ }
+</style>
+<div class="text-center">
+    <div class="well">
+      <div class="text-center">
+      <img src="assets/images/thales.png"
+      class="img-rounded" alt="Company Logo" width="200" height="150">
+      <br>
+      <h3><span class="label label-default">LOGIN</span></h3>
+    </div>
+
+    <form data-ng-submit="submitForm()">
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" data-ng-model="username"
+          name="uname" required>
+        <br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" data-ng-model="password"
+          name="psw" required>
+        <br>
+        <button type="submit">Login</button>
+      </div>
+      <br>
+    </form>
+  </div>
+  <span data-ng-show="showErrorMessage"
+    class="error-message">*Invalid Username or Password</span>
+</div>
